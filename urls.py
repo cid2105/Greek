@@ -18,9 +18,6 @@ urlpatterns += patterns('',
 	url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 )
 
-if settings.DEBUG:
-    urlpatterns += patterns('',
-        (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
-    )
+
 
 INTERNAL_IPS = ('127.0.0.1',)

@@ -7,9 +7,13 @@
 
 <link rel="stylesheet" type="text/css" href="{{MEDIA_ROOT}}/css/style.css" media="screen" title="style (screen)" />
 <link rel="stylesheet" type="text/css" href="{{MEDIA_ROOT}}/css/jquery-ui.css" media="screen" title="style (screen)" />
-<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.js"></script><script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery-ui.js"></script><script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.bubbleup.js"></script>
-
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.js"></script>
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery-ui.js"></script>
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.bubbleup.js"></script>
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.jNice.js"></script>
 <title>greekgavel</title>
+
+
 
 </head>
 
@@ -66,10 +70,10 @@ $(document).ready(function()
 <a href="http://twitter.com/#!/greekgavel">Follow Us</a>
 </p>
 
-
 <h2>about</h2>
-<p><b></b><br/>
-	 
+<p>No more listservs.<br/><b>Ever.</b></p>
+
+
 </div>
 {% endblock %}
 
@@ -77,7 +81,10 @@ $(document).ready(function()
 <h1>welcome</h1>
 <h2>Your Greek Life. Simplified.</h2>
 
-<br/><input type="text" id="unis" style="width:50%; height:30px;">
+<br/><br/>
+<div id="login" style="position:relative; top: 50px;">
+<input type="text" ><input type="text" style="position:relative;left:30px;"><input type="submit" class="awesome" style="position:relative; left: 100px;" value="Login >>">
+</div>
 
 <img src="{{MEDIA_ROOT}}/images/footer.png" style="margin-top:160px;">
 <!-- 
