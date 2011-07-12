@@ -9,9 +9,12 @@ text-decoration: none;
 color: #06f;
 }
 
+<<<<<<< HEAD
 input {
 width: 120px;
 }
+=======
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 a:hover {
 text-decoration: underline;
 color: #06f;
@@ -224,7 +227,10 @@ float: right;
 width: 140px;
 margin-left: 10px;
 margin-bottom: 20px;
+<<<<<<< HEAD
 margin-top:20px;
+=======
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 padding: 0;
 color: #666;
 }
@@ -318,11 +324,19 @@ div#demo ul#menu li img {
 .awesome{
 background: #222 url(/images/alert-overlay.png) repeat-x;
 display: inline-block;
+<<<<<<< HEAD
 padding: 3px;
 color: #fff;
 text-decoration: none;
 font-weight: bold;
 line-height: .5;
+=======
+padding: 5px 10px 6px;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+line-height: 1;
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 -moz-box-shadow: 0 1px 3px #999;
@@ -331,12 +345,21 @@ text-shadow: 0 -1px 1px #222;
 border-bottom: 1px solid #222;
 position: relative;
 cursor: pointer;
+<<<<<<< HEAD
 width:80px;
 }
 
 .awesome:hover {
   
    color: #06f;
+=======
+}
+
+.awesome:hover {
+   border-top-color: #003fde;
+   background: #003fde;
+   color: #ccc;
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
    }
 .awesome_button:active {
    border-top-color: #0864a1;
@@ -476,5 +499,9 @@ width:80px;
 
 .jNiceHidden {opacity:0;z-index:-1;position:relative;}
 .jNiceWrapper {position:relative;vertical-align:top;}
+<<<<<<< HEAD
 .jNiceWrapper input {outline:none;moz-outline:none;}
 
+=======
+.jNiceWrapper input {outline:none;moz-outline:none;}
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a

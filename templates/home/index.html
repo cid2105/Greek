@@ -5,12 +5,21 @@
 <meta name="description" content="_your description goes here_" />
 <meta name="keywords" content="_your,keywords,goes,here_" />
 
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/css/style.css" media="screen" title="style (screen)" />
 <link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/css/jquery-ui.css" media="screen" title="style (screen)" />
 <script type="text/javascript" src="{{MEDIA_URL}}/js/jquery.js"></script>
 <script type="text/javascript" src="{{MEDIA_URL}}/js/jquery-ui.js"></script>
 <script type="text/javascript" src="{{MEDIA_URL}}/js/jquery.bubbleup.js"></script>
 <script type="text/javascript" src="{{MEDIA_URL}}/js/jquery.jNice.js"></script>
+=======
+<link rel="stylesheet" type="text/css" href="{{MEDIA_ROOT}}/css/style.css" media="screen" title="style (screen)" />
+<link rel="stylesheet" type="text/css" href="{{MEDIA_ROOT}}/css/jquery-ui.css" media="screen" title="style (screen)" />
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.js"></script>
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery-ui.js"></script>
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.bubbleup.js"></script>
+<script type="text/javascript" src="{{MEDIA_ROOT}}/js/jquery.jNice.js"></script>
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 <title>greekgavel</title>
 
 
@@ -51,6 +60,7 @@
 
 $(document).ready(function() 
     {
+<<<<<<< HEAD
 	
 	 $('#login input[type!="submit"]').click(function () { 
 				
@@ -75,6 +85,16 @@ $(document).ready(function()
 			availableTags.push("{{uni}}");
 			{% endfor %}
 			
+=======
+
+	$(function() {
+			var availableTags = [];
+			
+			{% for uni in uni_list %}
+			availableTags.push("{{uni}}");
+			{% endfor %}
+
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 			$( "#unis" ).autocomplete({
 				source: availableTags
 			});
@@ -85,9 +105,17 @@ $(document).ready(function()
 <p style="">
 <a href="http://twitter.com/#!/greekgavel">Follow Us</a>
 </p>
+<<<<<<< HEAD
 <div style="position:relative;top:280px;">
 No more listservs.<br/><b>Ever.</b>
 </div>
+=======
+
+<h2>about</h2>
+<p>No more listservs.<br/><b>Ever.</b></p>
+
+
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 </div>
 {% endblock %}
 
@@ -95,6 +123,7 @@ No more listservs.<br/><b>Ever.</b>
 <h1>welcome</h1>
 <h2>Your Greek Life. Simplified.</h2>
 
+<<<<<<< HEAD
 <div id="login" style="position:absolute; top: -65px; left: 235px;">
 <input type="text" name="email" value="Email" style="color:#999999;">
 <input type="password" style="position:relative;left:30px; color:#999999;" value="Password" >
@@ -120,6 +149,21 @@ No more listservs.<br/><b>Ever.</b>
 -->
 
 <div id="footer">&copy; GreekGavel 2011 </div>
+=======
+<br/><br/>
+<div id="login" style="position:relative; top: 50px;">
+<input type="text" ><input type="text" style="position:relative;left:30px;"><input type="submit" class="awesome" style="position:relative; left: 100px;" value="Login >>">
+</div>
+
+<img src="{{MEDIA_ROOT}}/images/footer.png" style="margin-top:160px;">
+<!-- 
+<div id="box1"><p class="center"><img class="box" src="{{MEDIA_ROOT}}/images/star1.png" alt="" /></p><h2>project 1</h2><p class="box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+<div id="box3"><p class="center"><img class="box" src="{{MEDIA_ROOT}}/images/star2.png" alt="" /></p><h2>project 3</h2><p class="box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+<div id="box2"><p class="center"><img class="box" src="{{MEDIA_ROOT}}/images/star3.png" alt="" /></p><h2>project 2</h2><p class="box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+-->
+
+<div id="footer">&copy; Your Company  |  Template by <a href="http://www.demusdesign.com">DemusDesign</a></div>
+>>>>>>> c199b9df9b29327c52c1b92a2efa3c575b4e0c5a
 
 
 
