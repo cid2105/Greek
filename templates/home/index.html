@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="_your description goes here_" />
+<meta name="keywords" content="_your,keywords,goes,here_" />
+
+<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/css/style.css" media="screen" title="style (screen)" />
+<link rel="stylesheet" type="text/css" href="{{MEDIA_URL}}/css/jquery-ui.css" media="screen" title="style (screen)" />
+<script type="text/javascript" src="{{MEDIA_URL}}/js/jquery.js"></script>
+<script type="text/javascript" src="{{MEDIA_URL}}/js/jquery-ui.js"></script>
+<script type="text/javascript" src="{{MEDIA_URL}}/js/jquery.bubbleup.js"></script>
+<script type="text/javascript" src="{{MEDIA_URL}}/js/jquery.jNice.js"></script>
+<title>greekgavel</title>
+
+
+
+</head>
+
+<body>
+
+<div id="preload"></div>
+
+<div class="header">
+<h1>greek<span>gavel</span></h1>
+</div>
+<!-- Connecting You to Your Greek Life  -->
+
+
+
+<div id="main">
+<div id="container">
+
+{% block left_col %}
+<div id="subnav" style="display:none;">
+<ul>
+<li><a href="#">Subnav 1</a></li>
+<li><a href="#">Subnav 2</a></li>
+<li class="child"><a href="#">Child 1</a></li>
+<li class="child"><a href="#">Child 2</a></li>
+<li><a href="#">Subnav 3</a></li>
+<li class="child"><a href="#">Child 3</a></li>
+<li class="child"><a href="#">Child 4</a></li></ul>
+</div>
+{% endblock %}
+
+{% block right_col %}
+<div id="extras">
+<h2>twitter</h2>
+<script>
+
+$(document).ready(function() 
+    {
+	
+	 $('#login input[type!="submit"]').click(function () { 
+				
+		$(this).val("");
+	  });
+
+	 
+
+	$(function() {
+		$('#carousel').bxSlider({
+	          mode: 'fade',
+			            captions: true,
+			            auto: true,
+			            controls: false,
+						speed: 2100
+	            
+	        });
+	 
+			var availableTags = [];
+		
+			{% for uni in uni_list %}
+			availableTags.push("{{uni}}");
+			{% endfor %}
+			
+			$( "#unis" ).autocomplete({
+				source: availableTags
+			});
+		});
+		});	
+
+</script>
+<p style="">
+<a href="http://twitter.com/#!/greekgavel">Follow Us</a>
+</p>
+<div style="position:relative;top:280px;">
+No more listservs.<br/><b>Ever.</b>
+</div>
+</div>
+{% endblock %}
+
+<div id="content">
+<h1>welcome</h1>
+<h2>Your Greek Life. Simplified.</h2>
+
+<div id="login" style="position:absolute; top: -65px; left: 235px;">
+<input type="text" name="email" value="Email" style="color:#999999;">
+<input type="password" style="position:relative;left:30px; color:#999999;" value="Password" >
+<input type="submit" class="awesome" style="position:relative; left: 60px;" value="Login >>">
+</div>
+
+<div style="position:absolute; right:300px; top:73px; text-align:center;">
+<h2 style="color:#666;">Already Joined</h2>	
+<b>
+    <ul id="carousel">
+        <li> <img src="{{MEDIA_URL}}/images/beta.png" width="150px;" title="Beta Theta Pi - Columbia" alt="" /></li>
+        <li><img src="{{MEDIA_URL}}/images/pike.png" width="150px;" title="Pike - NYU" alt="" /></li>
+        <li><img src="{{MEDIA_URL}}/images/sigep.png" width="150px;" title="Sigep - Columbia" alt="" /></li>
+    </ul>
+</b>
+</div>
+<br/><br/><br/>
+<img src="{{MEDIA_URL}}/images/footer.png" style="margin-top:230px;" >
+<!-- 
+<div id="box1"><p class="center"><img class="box" src="{{MEDIA_URL}}/images/star1.png" alt="" /></p><h2>project 1</h2><p class="box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+<div id="box3"><p class="center"><img class="box" src="{{MEDIA_URL}}/images/star2.png" alt="" /></p><h2>project 3</h2><p class="box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+<div id="box2"><p class="center"><img class="box" src="{{MEDIA_URL}}/images/star3.png" alt="" /></p><h2>project 2</h2><p class="box">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></div>
+-->
+
+<div id="footer">&copy; GreekGavel 2011 </div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
